@@ -57,7 +57,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\compra.png" />
 	  <None Remove="Resources\Images\Dino.png" />
+	  <None Remove="Resources\Images\triangulo.png" />
 	</ItemGroup>
 
 	<ItemGroup>

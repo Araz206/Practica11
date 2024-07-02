@@ -3,10 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Practica11.Cambio"
              Title="Cambio">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <StackLayout Padding="20">
+
+        <Image Source="compra.png"
+            WidthRequest="150"
+            HeightRequest="150">
+        </Image>
+
+
+        <Label Text="Costo del articulo:"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"/>
+
+        <Entry x:Name="CostoArticuloEntry"
+            Keyboard="Numeric"
+            Placeholder="Ingrese el costo del articulo"/>
+
+        <Label Text="Dinero entregado por el cliente:"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"/>
+
+        <Entry x:Name="DineroEntregadoEntry"
+            Keyboard="Numeric"
+            Placeholder="Ingrese el dinero entregado"/>
+
+        <Button Text="Calcular cambio"
+             Clicked="Button_Clicked"/>
+
+        <Label x:Name="ResultadoLabel"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"/>
+
+    </StackLayout>
 </ContentPage>
